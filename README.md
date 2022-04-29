@@ -55,5 +55,9 @@ and others (due to bad lighting and/or resolution) with few details and almost s
 
 ![266](https://user-images.githubusercontent.com/100691347/164915126-41976f7d-a086-48ba-baa1-6e67e90d93c8.jpg)
 
-The accuracy score can surely get improved starting by these considerations, using data augumentation or slightly deepening the model.
-Transfer learning is also probably a way to get a better score, but that would require much more computational power and using a 60 millions parameters network for this problem is probably not the best solution.
+The accuracy score can surely get improved starting by these considerations, using data augumentation or slightly deepening the model. The dataset is quite small too, so probably transfer learning (+ fine tuning) could probably give a better result.
+
+# UPDATE:
+Trained a custom model made upon MobileNetV2 (roughly 2 millions paramater, 1/3 of the CNN made from scratch) on the same dataset.
+It performed a 94% accuracy on evaluation, against 85% accuracy on the old model.
+
